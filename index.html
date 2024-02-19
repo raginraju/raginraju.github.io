@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,6 +38,7 @@
             text-decoration: none;
             margin: 0 15px;
             font-size: 18px;
+            position: relative;
         }
 
         nav a::before {
@@ -49,8 +51,13 @@
             left: 0;
             transition: width 0.5s;
         }
-        
+
         nav a:hover::before {
+            width: 100%;
+            transition: width 1.5s;
+        }
+
+        nav a:hover::after {
             width: 100%;
             transition: width 1.5s;
         }
@@ -58,7 +65,8 @@
         section {
             padding: 50px;
             text-align: center;
-            padding-top: 70px; /* Adjust padding to account for fixed navbar */
+            padding-top: 70px;
+            /* Adjust padding to account for fixed navbar */
         }
 
         .card {
@@ -75,6 +83,7 @@
         }
     </style>
 </head>
+
 <body class="dark-mode">
 
     <nav>
@@ -126,4 +135,5 @@
         }
     </script>
 </body>
+
 </html>
