@@ -41,8 +41,7 @@
             position: relative;
         }
 
-        nav a::before,
-        nav a::after {
+        nav a::before {
             content: "";
             position: absolute;
             width: 0;
@@ -50,24 +49,17 @@
             background-color: #fff;
             bottom: 0;
             left: 0;
-            transition: width 0.3s;
-            /* Faster animation for ::before */
-        }
-
-        nav a::after {
-            left: 100%;
-            /* Start from the right */
-            right: 0;
-            transition: width 1.5s;
-            /* Slower animation for ::after */
+            transition: width 0.5s;
         }
 
         nav a:hover::before {
             width: 100%;
+            transition: width 1.5s;
         }
 
         nav a:hover::after {
             width: 100%;
+            transition: width 1.5s;
         }
 
         section {
