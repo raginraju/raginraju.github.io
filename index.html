@@ -39,6 +39,22 @@
             font-size: 18px;
         }
 
+        nav a::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #fff;
+            bottom: 0;
+            left: 0;
+            transition: width 0.5s;
+        }
+        
+        nav a:hover::before {
+            width: 100%;
+            transition: width 1.5s;
+        }
+
         section {
             padding: 50px;
             text-align: center;
