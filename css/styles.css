@@ -35,7 +35,7 @@ body {
 }
 
 .navbar a:hover {
-    color: #00f0ff;
+    color: #faff00; /* Neon Yellow on hover */
 }
 
 #hero {
@@ -45,8 +45,14 @@ body {
 
 .neon-text {
     font-size: 4rem;
-    color: #00f0ff;
-    text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff, 0 0 20px #00f0ff, 0 0 40px #39ff14, 0 0 80px #39ff14, 0 0 100px #39ff14;
+    color: #b200ff; /* Neon Purple */
+    text-shadow: 
+        0 0 5px #b200ff, 
+        0 0 10px #b200ff, 
+        0 0 20px #b200ff, 
+        0 0 40px #faff00, /* Yellow Glow */
+        0 0 80px #faff00, 
+        0 0 100px #faff00;
 }
 
 .hero-subtitle {
@@ -58,16 +64,16 @@ body {
     display: inline-block;
     color: white;
     padding: 15px 30px;
-    border: 2px solid #ff00f7;
+    border: 2px solid #00f0ff; /* Electric Blue Border */
     background-color: transparent;
     transition: background 0.3s, color 0.3s, box-shadow 0.3s;
     margin-top: 20px;
 }
 
 .neon-button:hover {
-    background-color: #ff00f7;
+    background-color: #00f0ff; /* Electric Blue */
     color: #1c1c1c;
-    box-shadow: 0 0 20px #ff00f7, 0 0 40px #ff00f7;
+    box-shadow: 0 0 20px #00f0ff, 0 0 40px #00f0ff;
 }
 
 /* Sections Styling */
