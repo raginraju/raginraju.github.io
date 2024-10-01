@@ -8,7 +8,7 @@
 body {
     background-color: #121212;
     color: #ffffff;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Modern Font for body text */
 }
 
 .navbar {
@@ -30,12 +30,13 @@ body {
 .navbar a {
     text-decoration: none;
     color: #ffffff;
+    font-family: 'Orbitron', sans-serif; /* Futuristic font for links */
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .navbar a:hover {
-    color: #faff00; /* Neon Yellow on hover */
+    color: #00f0ff; /* Original Neon Blue on hover */
 }
 
 #hero {
@@ -45,41 +46,45 @@ body {
 
 .neon-text {
     font-size: 4rem;
-    color: #b200ff; /* Neon Purple */
+    font-family: 'Orbitron', sans-serif; /* Futuristic font for headings */
+    color: #00f0ff; /* Original Neon Blue */
     text-shadow: 
-        0 0 5px #b200ff, 
-        0 0 10px #b200ff, 
-        0 0 20px #b200ff, 
-        0 0 40px #faff00, /* Yellow Glow */
-        0 0 80px #faff00, 
-        0 0 100px #faff00;
+        0 0 5px #00f0ff, 
+        0 0 10px #00f0ff, 
+        0 0 20px #00f0ff, 
+        0 0 40px #39ff14, /* Original Neon Green Glow */
+        0 0 80px #39ff14, 
+        0 0 100px #39ff14;
 }
 
 .hero-subtitle {
     font-size: 1.5rem;
     color: #ffffff;
+    font-family: 'Montserrat', sans-serif; /* Modern font for subtitle */
 }
 
 .neon-button {
     display: inline-block;
     color: white;
     padding: 15px 30px;
-    border: 2px solid #00f0ff; /* Electric Blue Border */
+    border: 2px solid #ff00f7; /* Original Neon Pink Border */
     background-color: transparent;
     transition: background 0.3s, color 0.3s, box-shadow 0.3s;
     margin-top: 20px;
+    font-family: 'Orbitron', sans-serif; /* Button font */
 }
 
 .neon-button:hover {
-    background-color: #00f0ff; /* Electric Blue */
+    background-color: #ff00f7; /* Original Neon Pink */
     color: #1c1c1c;
-    box-shadow: 0 0 20px #00f0ff, 0 0 40px #00f0ff;
+    box-shadow: 0 0 20px #ff00f7, 0 0 40px #ff00f7;
 }
 
 /* Sections Styling */
 section {
     padding: 80px 20px;
     text-align: center;
+    font-family: 'Montserrat', sans-serif; /* Body text for sections */
 }
 
 #projects .project {
@@ -99,8 +104,10 @@ input, textarea {
     background-color: #1c1c1c;
     color: #ffffff;
     border: 1px solid #ffffff;
+    font-family: 'Montserrat', sans-serif; /* Form input font */
 }
 
 button {
     cursor: pointer;
+    font-family: 'Orbitron', sans-serif; /* Button font */
 }
