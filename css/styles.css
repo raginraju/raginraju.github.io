@@ -1,0 +1,100 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #1c1c1c;
+    padding: 15px;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #00f0ff;
+}
+
+#hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.neon-text {
+    font-size: 4rem;
+    color: #00f0ff;
+    text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff, 0 0 20px #00f0ff, 0 0 40px #39ff14, 0 0 80px #39ff14, 0 0 100px #39ff14;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.neon-button {
+    display: inline-block;
+    color: white;
+    padding: 15px 30px;
+    border: 2px solid #ff00f7;
+    background-color: transparent;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    margin-top: 20px;
+}
+
+.neon-button:hover {
+    background-color: #ff00f7;
+    color: #1c1c1c;
+    box-shadow: 0 0 20px #ff00f7, 0 0 40px #ff00f7;
+}
+
+/* Sections Styling */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#projects .project {
+    margin: 20px 0;
+}
+
+/* Contact Form Styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+button {
+    cursor: pointer;
+}
