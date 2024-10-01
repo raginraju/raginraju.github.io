@@ -111,3 +111,57 @@ button {
     cursor: pointer;
     font-family: 'Orbitron', sans-serif; /* Button font */
 }
+
+/* Airship Container */
+.airship-container {
+    position: fixed;
+    top: 50%; /* Center vertically */
+    left: -200px; /* Start off-screen on the left */
+    animation: flyAirship 10s linear infinite; /* Animation to fly */
+    perspective: 1000px; /* Perspective for 3D effect */
+}
+
+/* Airship Style */
+.airship {
+    width: 100px; /* Width of the airship */
+    height: 50px; /* Height of the airship */
+    background: linear-gradient(45deg, #ff6ec4, #7873f5); /* Gradient for the airship */
+    border-radius: 50px; /* Round edges for airship */
+    position: relative; /* For positioning the banner */
+    transform-style: preserve-3d;
+}
+
+/* Banner Style */
+.banner {
+    position: absolute;
+    bottom: -30px; /* Position it below the airship */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Center it */
+    background-color: #1c1c1c; /* Background color for the banner */
+    color: #ffffff; /* Text color */
+    padding: 5px 10px; /* Padding for the banner */
+    border-radius: 5px; /* Rounded corners */
+    font-family: 'Orbitron', sans-serif; /* Font for the banner */
+    text-shadow: 0 0 10px #39ff14; /* Neon glow effect */
+    animation: bannerWave 1s ease-in-out infinite; /* Animation for waving effect */
+}
+
+/* Animation for Airship Flying */
+@keyframes flyAirship {
+    0% {
+        transform: translateZ(0) rotate(0deg);
+    }
+    100% {
+        transform: translateX(100vw) translateZ(0) rotate(0deg); /* Move to the right */
+    }
+}
+
+/* Banner Waving Animation */
+@keyframes bannerWave {
+    0%, 100% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    50% {
+        transform: translateX(-50%) rotate(5deg); /* Slight upward wave */
+    }
+}
