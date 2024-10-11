@@ -115,7 +115,7 @@ button {
 /* Airship Container */
 .airship-container {
     position: fixed;
-    top: 50%; /* Center vertically */
+    top: 0%; /* Center vertically */
     left: -200px; /* Start off-screen on the left */
     animation: flyAirship 10s linear infinite; /* Animation to fly */
     perspective: 1000px; /* Perspective for 3D effect */
@@ -148,6 +148,14 @@ button {
     text-shadow: 0 0 10px #39ff14; /* Neon glow effect */
     animation: bannerWave 1s ease-in-out infinite; /* Animation for waving effect */
 }
+
+/* New Style for Navbar Text When Airship Passes */
+.navbar a.passed {
+    color: #ff00f7; /* Neon Pink or any color you prefer */
+    text-shadow: 0 0 10px #ff00f7;
+}
+
+
 
 /* Animation for Airship Flying */
 @keyframes flyAirship {
